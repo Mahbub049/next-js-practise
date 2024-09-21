@@ -23,6 +23,10 @@ const Navbar = () => {
     const handler = () =>{
         router.push("/services")
     }
+
+    if(pathName.includes("dashboard"))
+      return <div className="bg-red-500">Dashboard Layout</div>
+
   return (
     <div>
       <nav className="bg-green-500 flex justify-between">
